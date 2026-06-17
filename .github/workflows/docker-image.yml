@@ -90,7 +90,7 @@ jobs:
 
             docker load < /home/ubuntu/careercamp.tar
 
-            docker compose -f /home/ubuntu/docker-compose.yml up -d --no-deps --force-recreate spring-boot-app
+            docker-compose -f /home/ubuntu/docker-compose.yml up -d --no-deps --force-recreate spring-boot-app
             
             docker image prune -f
           EOF
