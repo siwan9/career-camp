@@ -9,7 +9,7 @@ import com.wemisson.career_camp.domain.registratiion.dto.RegistrationRequest;
 @Controller
 public class ViewController {
 
-	@GetMapping("/")
+	@GetMapping("/home")
 	public String home() {
 		return "home";
 	}
@@ -30,8 +30,12 @@ public class ViewController {
 		return "admin/login";
 	}
 
-	@GetMapping("/admin/dashboard")
-	public String adminDashboard() {
-		return "admin/dashboard";
+	@GetMapping("/admin/home")
+	public String adminHome() {
+		return "admin/home";
+	}
+	@GetMapping("/admin/recruitment-dashboard")
+	public String adminRecruitmentDashboard() {
+		return "admin/recruitment-dashboard";
 	}
 }

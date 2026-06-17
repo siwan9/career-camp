@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+
+    <title>진로특강 관리자</title>
+
+    <link rel="stylesheet"
+          th:href="@{/css/admin/home.css}">
+
+</head>
+
+<body>
+
+<div class="page-container">
+
+    <header class="page-header">
+
+        <div>
+
+            <h1 class="page-title">
+                진로특강 관리자
+            </h1>
+
+            <p class="page-subtitle">
+                관리할 모집을 선택하세요.
+            </p>
+
+        </div>
+
+        <a href="/admin/login"
+           class="logout-btn">
+
+            로그아웃
+
+        </a>
+
+    </header>
+
+    <!-- 현재 모집 -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            현재 진행중 모집
+        </h2>
+
+        <a class="recruitment-card active"
+           href="/admin/recruitment-dashboard">
+
+            <div>
+
+                <div class="recruitment-title">
+                    2026 여름 진로캠프
+                </div>
+
+                <div class="recruitment-desc">
+
+                    모집중 · 신청자 327명
+
+                </div>
+
+            </div>
+
+            <div class="badge active-badge">
+
+                진행중
+
+            </div>
+
+        </a>
+
+    </section>
+
+    <!-- 과거 모집 -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            지난 모집
+        </h2>
+
+        <div class="recruitment-list">
+
+            <a class="recruitment-card"
+               href="/admin/recruitment-dashboard">
+
+                <div>
+
+                    <div class="recruitment-title">
+                        2025 겨울 진로캠프
+                    </div>
+
+                    <div class="recruitment-desc">
+                        신청자 289명
+                    </div>
+
+                </div>
+
+            </a>
+
+            <a class="recruitment-card"
+               href="/admin/recruitment-dashboard">
+
+                <div>
+
+                    <div class="recruitment-title">
+                        2025 여름 진로캠프
+                    </div>
+
+                    <div class="recruitment-desc">
+                        신청자 302명
+                    </div>
+
+                </div>
+
+            </a>
+
+        </div>
+
+    </section>
+
+</div>
+
+</body>
+</html>

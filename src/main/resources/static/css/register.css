@@ -76,4 +76,69 @@ body {
     .page-title {
         font-size: 1.6rem;
     }
+
+    .section-header {
+        margin: 32px 0 20px;
+    }
+
+    .section-icon {
+        width: 42px;
+        height: 42px;
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1rem;
+    }
+}
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin: 40px 0 24px;
+}
+
+.section-icon {
+
+    width: 48px;
+    height: 48px;
+
+    border-radius: 14px;
+
+    background: #eef4ff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.3rem;
+
+    flex-shrink: 0;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.section-description {
+    color: #6c757d;
+    font-size: .9rem;
+    margin-top: 2px;
+}
+.lecture-card {
+
+    border: 1.5px solid #dbe2ea;
+
+    border-radius: 18px;
+
+    box-shadow:
+            0 4px 12px rgba(0,0,0,.04);
+
+    transition:
+            transform .2s ease,
+            box-shadow .2s ease,
+            border-color .2s ease;
 }

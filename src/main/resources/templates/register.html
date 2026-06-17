@@ -57,18 +57,26 @@
 
             <!-- 특강 소개 -->
 
-            <h3 class="fw-bold mb-3">
-                특강 소개
-            </h3>
+            <div class="section-header">
 
-            <p class="text-muted mb-4">
-                신청 전 특강 내용을 확인해주세요.
-            </p>
+                <div class="section-icon">
+                    📚
+                </div>
+
+                <div>
+
+                    <div class="section-title">
+                        특강 소개
+                    </div>
+
+                </div>
+
+            </div>
 
             <div class="row g-3 mb-5">
 
                 <div class="col-12">
-                    <div class="card shadow-sm h-100">
+                    <div class="card lecture-card h-100">
                         <div class="card-body">
 
                             <h5 class="card-title">
@@ -99,7 +107,7 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="card shadow-sm h-100">
+                    <div class="card lecture-card h-100">
                         <div class="card-body">
 
                             <h5 class="card-title">
@@ -129,7 +137,7 @@
                 </div>
 
                 <div class="col-12">
-                    <div class="card shadow-sm h-100">
+                    <div class="card lecture-card h-100">
                         <div class="card-body">
 
                             <h5 class="card-title">
@@ -164,6 +172,21 @@
                   th:action="@{/registrations}"
                   th:object="${request}"
                   method="post">
+                <div class="section-header">
+
+                    <div class="section-icon">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <div class="section-title">
+                            참가자 정보
+                        </div>
+
+                    </div>
+
+                </div>
 
                 <div class="mb-3">
                     <label class="form-label">이름</label>
@@ -197,7 +220,21 @@
                            placeholder="신청 조회 시 사용됩니다" required>
                 </div>
 
-                <hr class="my-4">
+                <div class="section-header">
+
+                    <div class="section-icon">
+                        🎓
+                    </div>
+
+                    <div>
+
+                        <div class="section-title">
+                            희망 특강 선택
+                        </div>
+
+                    </div>
+
+                </div>
 
                 <div class="mb-3">
                     <label class="form-label">1지망 특강</label>
@@ -238,7 +275,7 @@
                 <button
                         id="submitButton"
                         type="submit"
-                        class="btn btn-primary w-100 submit-btn">
+                        class="btn btn-primary w-100 submit-btn mt-4">
                     신청하기
                 </button>
 
